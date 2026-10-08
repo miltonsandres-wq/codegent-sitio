@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="es-HN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Codegent · Desarrollo de software en San Pedro Sula, Honduras</title>
+  <meta name="description" content="Codegent es una empresa de desarrollo de software con sede en San Pedro Sula, Honduras. Desarrolla SonrIA, un sistema para clínicas médicas y dentales.">
+  <meta name="theme-color" content="#146274">
+  <style>
+    :root { --tinta: #0f172a; --suave: #475569; --marca: #146274; --fondo: #f8fafc; --linea: #e2e8f0; }
+    @media (prefers-color-scheme: dark) { :root { --tinta: #f1f5f9; --suave: #94a3b8; --marca: #5eb8cb; --fondo: #0b1220; --linea: #1e293b; } }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: var(--fondo); color: var(--tinta); line-height: 1.6; }
+    .contenedor { max-width: 46rem; margin: 0 auto; padding: 0 1rem; }
+    header { border-bottom: 1px solid var(--linea); }
+    header .contenedor { display: flex; align-items: center; justify-content: space-between; padding: 1rem; }
+    .nombre { font-weight: 700; font-size: 1.25rem; color: var(--marca); letter-spacing: .01em; }
+    main { padding: 2.5rem 0 3rem; }
+    h1 { font-size: 1.9rem; line-height: 1.2; margin: 0 0 .75rem; }
+    h2 { font-size: 1.15rem; margin: 2rem 0 .5rem; color: var(--marca); }
+    p { margin: 0 0 1rem; color: var(--suave); }
+    .tarjeta { border: 1px solid var(--linea); border-radius: .75rem; padding: 1rem 1.25rem; background: color-mix(in srgb, var(--fondo) 92%, var(--marca)); }
+    dl { margin: 0; display: grid; grid-template-columns: max-content 1fr; gap: .4rem 1rem; }
+    dt { font-weight: 600; }
+    dd { margin: 0; color: var(--suave); }
+    a { color: var(--marca); }
+    footer { border-top: 1px solid var(--linea); padding: 1.25rem 0; font-size: .875rem; color: var(--suave); }
+    @media (max-width: 30rem) { dl { grid-template-columns: 1fr; gap: 0; } dd { margin-bottom: .6rem; } h1 { font-size: 1.6rem; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="contenedor"><span class="nombre">Codegent</span></div>
+  </header>
+
+  <main class="contenedor">
+    <h1>Software para clínicas, hecho en Honduras</h1>
+    <p>Codegent es una empresa de desarrollo de software con sede en San Pedro Sula, Cortés, Honduras.</p>
+
+    <h2>Nuestro producto: SonrIA</h2>
+    <p>SonrIA es un sistema para clínicas médicas y dentales. Reúne en un solo lugar la agenda de citas, el expediente de los pacientes y los recordatorios, con la información de cada clínica separada y protegida.</p>
+
+    <h2>Contacto</h2>
+    <div class="tarjeta">
+      <dl>
+        <dt>Empresa</dt><dd>Codegent</dd>
+        <dt>Dirección</dt><dd>Residencial Terralta, San Pedro Sula, Cortés 21201, Honduras</dd>
+        <dt>Teléfono</dt><dd><a href="tel:+50487972266">+504 8797 2266</a></dd>
+      </dl>
+    </div>
+  </main>
+
+  <footer>
+    <div class="contenedor">&copy; <span id="anio">2026</span> Codegent. Todos los derechos reservados.</div>
+  </footer>
+  <script>document.getElementById("anio").textContent = new Date().getFullYear();</script>
+</body>
+</html>
